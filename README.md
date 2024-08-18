@@ -7,3 +7,5 @@ Yes, I know I could've looked into the source code of the extension, but I thoug
 Anyway, to install this extension, go to Brave Extensions and click on the "Load unpacked" button. Then, select the folder where you downloaded this repository. If you don't see load unpacked, you might need to enable Developer Mode in Brave Settings. Or, not. Y'know, choose your own adventure. Either way, here's what it looks like:
 
 ![Screenshot of the extension](https://github.com/user-attachments/assets/a14832c4-fe4c-4c83-a10a-bcf635d54266)
+
+By the way, the favicon was made with ChatGPT/DALL-E, just in case you were wondering.
