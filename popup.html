@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            width: 300px;
+            box-sizing: border-box;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #000;
+        }
+
+        #password {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: #333;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            text-align: center;
+            word-break: break-all;
+        }
+
+        .options {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .options label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #444;
+        }
+
+        .options input[type="checkbox"] {
+            margin-right: 10px;
+            accent-color: #333;
+        }
+
+        #lengthValue {
+            margin-left: 10px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        #lengthSlider {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        button:active {
+            background-color: #777;
+        }
+
+        button:last-of-type {
+            background-color: #888;
+            margin-top: 10px;
+        }
+
+        button:last-of-type:hover {
+            background-color: #aaa;
+        }
+
+        button:last-of-type:active {
+            background-color: #bbb;
+        }
+
+        #copyMessage {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #000;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>Password Generator</h1>
+    <div id="password">Your password will appear here</div>
+    <div class="options">
+        <label><input type="checkbox" id="alphabets" checked> Include Alphabets</label>
+        <label><input type="checkbox" id="numbers" checked> Include Numbers</label>
+        <label><input type="checkbox" id="specials"> Include Special Characters</label>
+        <label><input type="checkbox" id="readable"> Make it Readable</label>
+    </div>
+    <div>
+        <label for="lengthSlider">Password Length: <span id="lengthValue">12</span></label>
+        <input type="range" id="lengthSlider" min="6" max="20" value="12">
+    </div>
+    <button id="copy">Copy to Clipboard</button>
+    <div id="copyMessage">Password copied to clipboard!</div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
